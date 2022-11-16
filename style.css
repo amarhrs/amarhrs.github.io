@@ -1,0 +1,90 @@
+.jumbotron{
+    padding: 5rem;
+    background-color: #e2edff;
+}
+
+#projects{
+    background-color: #e2edff;
+}
+
+section{
+    padding-top: 4rem;
+}
+
+/* Daftar Hero */
+.daftarhero-box{
+    position: relative;
+    background-color: #0c6efd;
+    border-radius: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.daftarhero-box::before{
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 6em;
+    font-size: bold;
+    font-style: italic;
+    top: 30px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.daftarhero-box:hover::before{
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.2;
+}
+
+.daftarhero-box::after{
+    content: 'HERO';
+    position: absolute;
+    color: #fff;
+    font-size: 4.3em;
+    font-size: bold;
+    font-style: italic;
+    top: 350px;
+    left: 450px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.daftarhero-box:hover::after{
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.2;
+}
+
+.daftarhero-name{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.daftarhero-box:hover .daftarhero-name{
+    top: 20px;
+    opacity: 1;
+}
+
+.daftarhero-detail-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.daftarhero-box:hover .daftarhero-detail-button{
+    opacity: 1;
+    bottom: 20px;
+}
